@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // This could go to a different Google Sheet or a dedicated email service (e.g., Formspree, Netlify Forms, custom backend)
             // For simplicity, I'll use a placeholder for a different script URL.
-            const CONTACT_SCRIPT_URL = 'YOUR_MAIN_CONTACT_FORM_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+            const CONTACT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxb5UdKoHlY_pBwP9uW5heln4nOgNCFa_sK9PPXMSy7B9mKn5il7BaRcANr9BNiUdi0gQ/exec';
 
             try {
                 const response = await fetch(CONTACT_SCRIPT_URL, {
@@ -267,3 +267,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
