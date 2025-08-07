@@ -954,6 +954,55 @@ ul {
     margin: 0;
     color: var(--text-dark);
 }
+/* WhatsApp Container */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Rolling Phone Number */
+.whatsapp-phone-number {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.whatsapp-phone-number a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Hover Effect: Show the phone number */
+.whatsapp-container:hover .whatsapp-phone-number {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 /* Example graphic style images */
 /* These would typically be placed in an 'images' folder */
 /* You would need to create or source these images */
@@ -964,3 +1013,4 @@ ul {
 - client1.jpg, client2.jpg, client3.jpg: Professional headshots of diverse individuals (with consent) or generic, trustworthy faces.
 
 */
+
