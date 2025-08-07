@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // IMPORTANT: Replace with your actual Google Apps Script Web App URL
             // Instructions for setting this up are below this code block
-            const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz9HLQS6sS1ua7R2ccwQdtLEsfth3VDi5mIPOJiCq0TOj2S74kuNuQvIGy__CimOzrvQg/exec';
 
             try {
                 const response = await fetch(SCRIPT_URL, {
@@ -267,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
